@@ -1,7 +1,7 @@
 #!/bin/bash
 
 clear
-
+#
 if [[ $1 = '--update'  ]]; then
 	wget https://raw.githubusercontent.com/TkaTheGod/PRYTool/master/prytool.sh;
 	exit

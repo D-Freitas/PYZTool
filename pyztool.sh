@@ -504,9 +504,10 @@ a
 						do
 							f
 							if [[ $y = ?(+|-)+([0-9]) ]]; then 
-								[ $y -ne 0 ] && [ $y -ne  5 ] && [ $y -ne  36 ] && [ $y -lt 58 ] && e #can't be zero and none of the options that require commands besides apt-get install, if this condition is true, run apt-get install
+								[ $y -ne 0 ] && [ $y -ne 1 ] && [ $y -ne  5 ] && [ $y -ne  36 ] && [ $y -lt 58 ] && e #can't be zero and none of the options that require commands besides apt-get install, if this condition is true, run apt-get install
+								[ $y -eq 1 ] && echo `wget https://raw.githubusercontent.com/qashqao/acccheck/master/acccheck.pl` > /dev/null
 								[ $y -eq 5 ] && echo `wget http://www.morningstarsecurity.com/downloads/bing-ip2hosts-0.4.tar.gz && tar -xzvf bing-ip2hosts-0.4.tar.gz && cp bing-ip2hosts-0.4/bing-ip2hosts /usr/local/bin/` > /dev/null
-								[ $y -eq 36 ] && echo 'comando here3'
+								[ $y -eq 36 ] && echo 'Download here => https://www.ntop.org/'
 							elif [ $y = "back" ]; then
 								clear
 								b #KLTools menu
@@ -728,7 +729,7 @@ a
 						done;;
 
 					11)
-						tool=("" "acccheck" "burpsuite" "cewl" "chntpw" "cisco-auditing-tool" "cmospwd" "creddump" "crunch" "none" "findmyhash" "gpp-decrypt" "hash-identifier" "hexorbase" "none"
+						tool=("" "acccheck" "burpsuite" "cewl" "chntpw" "cisco-auditing-tool" "cmospwd" "creddump" "crunch" "dbpwaudit" "findmyhash" "gpp-decrypt" "hash-identifier" "hexorbase" "thc-hydra"
 						"john" "johnny" "keimpx" "maltego-teeth" "maskprocessor" "multiforcer" "ncrack" "oclgausscrack" "pack" "patator" "none" "polenum" "rainbowcrack" "rcracki-mt" "rsmangler"
 						"none" "statsprocessor" "thc-pptp-bruter" "truecrack" "webscarab" "wordlists" "zaproxy")
 						q
@@ -736,7 +737,12 @@ a
 						do
 							f
 							if [[ $y = ?(+|-)+([0-9]) ]]; then
-								[ $y -ne 0 ] && [ $y -ne 9 ] && [ $y -ne 14 ] && [ $y -ne 25 ] && [ $y -ne 30 ] && [ $y -lt 37 ] && e #can't be zero and none of the options that require commands besides apt-get install, if this condition is true, run apt-get install
+								[ $y -ne 0 ] && [ $y -ne 1 ] [ $y -ne 9 ] && [ $y -ne 14 ] && [ $y -ne 25 ] && [ $y -ne 30 ] && [ $y -lt 37 ] && e #can't be zero and none of the options that require commands besides apt-get install, if this condition is true, run apt-get install
+								[ $y -eq 1 ] && echo `wget https://raw.githubusercontent.com/qashqao/acccheck/master/acccheck.pl` > /dev/null
+								[ $y -eq 9 ] && echo 'Download here => https://www.cqure.net/wp/tools/database/dbpwaudit/'
+								[ $y -eq 14 ] && git clone https://github.com/vanhauser-thc/thc-hydra.git && cd thc-hydra && ./configure && make
+								[ $y -eq 15 ] && git clone https://github.com/magnumripper/JohnTheRipper.git
+								[ $y -eq 30 ] && git clone https://github.com/skylergrammer/sqldict.git
 							elif [ $y = "back" ]; then
 								clear
 								b #KLTools menu
@@ -877,7 +883,7 @@ a
 				esac
 			done
 		elif [ $z = 4 ]; then
-			echo 'help bla bla bla'
+			echo ''
 		elif [ $z = "clear" ]; then
 			clear
 			a

@@ -3,7 +3,7 @@
 clear
 
 if [[ $1 = '--update'  ]]; then
-	wget https://raw.githubusercontent.com/TkaTheGod/PYZTool/master/pyztool.sh;
+	wget https://raw.githubusercontent.com/TkaTheGod/PRYTool/master/prytool.sh;
 	exit
 fi
 
@@ -816,7 +816,7 @@ a
 					do
 						editor=("" "sublime-text" "vim" "joe" "emacs" "gedit" "kwrite" "geany")
 						read -p 'kat > ' p
-						[ $p = 1 ] && echo ${editor[$p]}
+						[ $p = 1 ] && wget -qO - https://download.sublimetext.com/sublimehq-pub.gpg | sudo apt-key add - && apt-get install -y apt-transport-https && echo "deb https://download.sublimetext.com/ apt/stable/" | sudo tee /etc/apt/sources.list.d/sublime-text.list && apt-get update && apt-get install sublime-text
 					        if [[ $p = ?([2-7]) ]]; then
 						    apt-get install ${editor[$p]}
 						elif [ $p = "back" ]; then

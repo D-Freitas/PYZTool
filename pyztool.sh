@@ -3,7 +3,7 @@
 clear
 
 if [[ $1 = '--update'  ]]; then
-	wget https://raw.githubusercontent.com/TkaTheGod/PYZTool/master/pyztool.sh;
+	rm pyztool.sh && wget https://raw.githubusercontent.com/TkaTheGod/PYZTool/master/pyztool.sh
 	exit
 fi
 

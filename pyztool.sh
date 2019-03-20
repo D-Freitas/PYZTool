@@ -829,7 +829,7 @@ a
 						clear
 						b;;
 					home)
-						./$0;;
+						exit;bash $0;;
 					exit)
 						exit;;
 				esac

@@ -516,6 +516,8 @@ a
 							elif [ $y = "clear" ]; then
 								clear
 								g #Information Gathering menu
+							elif [ $y = "home" ]; then
+								exit && bash $0
 							elif [ $y = "exit" ]; then
 								exit
 							fi
@@ -543,6 +545,8 @@ a
 							elif [ $y = "clear" ]; then
 								clear
 								h #Vulnerability Analysis menu
+							elif [ $y = "home" ]; then
+								exit && bash $0
 							elif [ $y = "exit" ]; then
 								exit
 							fi
@@ -567,6 +571,8 @@ a
 							elif [ $y = "clear" ]; then
 								clear
 								i #Wireless Attacks menu
+							elif [ $y = "home" ]; then
+								exit && bash $0
 							elif [ $y = "exit" ]; then
 								exit
 							fi
@@ -593,6 +599,8 @@ a
 							elif [ $y = "clear" ]; then
 								clear
 								j #Web Applications menu
+							elif [ $y = "home" ]; then
+								exit && bash $0
 							elif [ $y = "exit" ]; then
 								exit
 							fi
@@ -616,6 +624,8 @@ a
 							elif [ $y = "clear" ]; then
 								clear
 								k #Sniffing & Spoofing menu
+							elif [ $y = "home" ]; then
+								exit && bash $0
 							elif [ $y = "exit" ]; then
 								exit
 							fi
@@ -636,6 +646,8 @@ a
 							elif [ $y = "clear" ]; then
 								clear
 								l #Maintaining Access menu
+							elif [ $y = "home" ]; then
+								exit && bash $0
 							elif [ $y = "exit" ]; then
 								exit
 							fi
@@ -656,6 +668,8 @@ a
 							elif [ $y = "clear" ]; then
 								clear
 								m #Reporting Tools menu
+							elif [ $y = "home" ]; then
+								exit && bash $0
 							elif [ $y = "exit" ]; then
 								exit
 							fi
@@ -678,6 +692,8 @@ a
 							elif [ $y = "clear" ]; then
 								clear
 								n #Exploitation Tools menu
+							elif [ $y = "home" ]; then
+								exit && bash $0
 							elif [ $y = "exit" ]; then
 								exit
 							fi
@@ -703,6 +719,8 @@ a
 							elif [ $y = "clear" ]; then
 								clear
 								o #Forensics Tools menu
+							elif [ $y = "home" ]; then
+								exit && bash $0
 							elif [ $y = "exit" ]; then
 								exit
 							fi
@@ -724,6 +742,8 @@ a
 							elif [ $y = "clear" ]; then
 								clear
 								p #Stress Testing menu
+							elif [ $y = "home" ]; then
+								exit && bash $0
 							elif [ $y = "exit" ]; then
 								exit
 							fi
@@ -751,6 +771,8 @@ a
 							elif [ $y = "clear" ]; then
 								clear
 								q #Password Attacks menu
+							elif [ $y = "home" ]; then
+								exit && bash $0
 							elif [ $y = "exit" ]; then
 								exit
 							fi
@@ -771,6 +793,8 @@ a
 							elif [ $y = "clear" ]; then
 								clear
 								r #Reverse Engineering menu
+							elif [ $y = "home" ]; then
+								exit && bash $0
 							elif [ $y = "exit" ]; then
 								exit
 							fi
@@ -791,6 +815,8 @@ a
 							elif [ $y = "clear" ]; then
 								clear
 								s #Hardware Hacking menu
+							elif [ $y = "home" ]; then
+								exit && bash $0
 							elif [ $y = "exit" ]; then
 								exit
 							fi
@@ -802,6 +828,8 @@ a
 					clear)
 						clear
 						b;;
+					home)
+						exit && bash $0;;
 					exit)
 						exit;;
 				esac
@@ -834,6 +862,8 @@ a
 						elif [ $p = "clear" ]; then
 						     clear
 						     d
+						elif [ $p = "home" ]; then
+							exit && bash $0
 						elif [ $p = "exit" ]; then
 						    exit
 						fi
@@ -879,6 +909,8 @@ a
 					clear)
 						clear
 						t;;
+					home)
+						exit && bash $0;;
 					exit)
 						exit
 				esac
@@ -888,6 +920,8 @@ a
 		elif [ $z = "clear" ]; then
 			clear
 			a
+		elif [ $z = "home" ]; then
+			exit && bash $0
 		elif [ $z = "exit" ] ||	 [ $z = "back" ]; then
 			exit
 		fi

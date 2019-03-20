@@ -863,7 +863,7 @@ a
 						     clear
 						     d
 						elif [ $p = "home" ]; then
-							exit && bash $0
+						    bash $0
 						elif [ $p = "exit" ]; then
 						    exit
 						fi

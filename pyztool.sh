@@ -921,7 +921,7 @@ a
 			clear
 			a
 		elif [ $z = "home" ]; then
-			bash $0; exit;;
+			bash $0; exit
 		elif [ $z = "exit" ] ||	 [ $z = "back" ]; then
 			exit
 		fi

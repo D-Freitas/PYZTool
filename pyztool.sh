@@ -647,7 +647,7 @@ a
 								clear
 								l #Maintaining Access menu
 							elif [ $y = "home" ]; then
-								bash $0; exit;;
+								bash $0; exit
 							elif [ $y = "exit" ]; then
 								exit
 							fi

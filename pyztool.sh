@@ -66,7 +66,7 @@ echo '[1] apache2
 '
 }
 
-c(){
+c(){	
 echo '
  /$$$$$$$                    /$$$$$$$$                  /$$
 | $$__  $$                  |__  $$__/                 | $$
@@ -441,6 +441,16 @@ $prt
 "
 }
 
+ets(){
+echo "
+[1] Wifresti
+[2] Squid3
+
+
+$prt
+"
+}
+
 t(){
 echo "
                 1   1
@@ -585,7 +595,6 @@ a
 						j
 						while true
 						do
-							f
 							if [[ $y = ?(+|-)+([0-9]) ]]; then  #int only
 								[ $y -ne 0 ] && [ $y -ne 6 ] && [ $y -ne 19 ] && [ $y -ne 35 ] && [ $y -ne 36 ] && [ $y -lt 42 ] && e #can't be zero and none of the options that require commands besides apt-get install, if this condition is true, run apt-get install
 								[ $y -eq 6 ] && echo `apt-get install git && git clone https://github.com/stasinopoulos/commix.git commix && cd commix && python ./commix.py --install` > /dev/null 
@@ -799,7 +808,7 @@ a
 								exit
 							fi
 						done;;
-
+						
 					13)
 						tool=("" "android-sdk" "apktool" "arduino" "dex2jar" "sakis3g" "smali")
 						s
@@ -821,20 +830,39 @@ a
 								exit
 							fi
 						done;;
+						
+					14)
+						ets
+						while true
+						do
+							f
+							[[ $y = 1 ]] && git clone https://github.com/LionSec/wifresti.git && cp wifresti/wifresti.py /usr/bin/wifresti && chmod +x /usr/bin/wifresti && wifresti
+							[[ $y = 2 ]] && apt install squid3
+							if [ $y = "back" ]; then
+								clear; b; break
+							elif [ $y = "clear" ]; then
+								clear
+								ets
+							elif [ $y = "home" ]; then 
+								back $0
+								exit
+                                                        elif [ $y = "exit" ]; then
+                                                        	exit
+                                                        fi
+						done;;
+						
+					clear)
+						clear
+						b;;
 					back)
 						clear
 						a
 						break;;
-					clear)
-						clear
-						b;;
-					home)
-						bash $0; exit;;
+						 
 					exit)
 						exit;;
 				esac
-		done
-
+			done
 		elif [ $z = 2 ]; then
 			clear
 			c #DevTools

@@ -595,10 +595,11 @@ a
 						j
 						while true
 						do
+							f
 							if [[ $y = ?(+|-)+([0-9]) ]]; then  #int only
 								[ $y -ne 0 ] && [ $y -ne 6 ] && [ $y -ne 19 ] && [ $y -ne 35 ] && [ $y -ne 36 ] && [ $y -lt 42 ] && e #can't be zero and none of the options that require commands besides apt-get install, if this condition is true, run apt-get install
 								[ $y -eq 6 ] && echo `apt-get install git && git clone https://github.com/stasinopoulos/commix.git commix && cd commix && python ./commix.py --install` > /dev/null 
-								[ $y -eq 19 ] && apt install sqlninja curl https://raw.githubusercontent.com/rapid7/metasploit-omnibus/master/config/templates/metasploit-framework-wrappers/msfupdate.erb > msfinstall; chmod 755 msfinstall; ./msfinstall
+								[ $y -eq 19 ] && apt install sqlninja curl https://raw.githubusercontent.com/rapid7/metasploit-omnibus/master/config/templates/metasploit-framework-wrappers/msfupdate.erb > msfinstall && chmod 755 msfinstall && ./msfinstall && rm msfinstall
 								[ $y -eq 35 ] && echo 'wget https://ufpr.dl.sourceforge.net/project/owasp/WebScarab/20070504-1631/webscarab-installer-20070504-1631.jar; '
 								[ $y -eq 36 ] && echo `apt-get install git && git clone git://git.kali.org/packages/webslayer.git` > /dev/mull 
 							elif [ $y = "back" ]; then

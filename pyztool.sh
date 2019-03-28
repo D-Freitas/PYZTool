@@ -443,6 +443,8 @@ $prt
 
 ets(){
 echo "
+[+] Extras
+
 [1] Wifresti
 [2] Squid3
 

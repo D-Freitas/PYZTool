@@ -10,7 +10,7 @@ Automatically install all Kali linux & development tools
 
 # Requirements
 - Bash
-- An operating system (tested on Ubuntu and Debian)
+- An operating system (tested on Debian and Ubuntu)
 
 # Installation
 - sudo su

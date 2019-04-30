@@ -1,4 +1,4 @@
-![pyztool](https://cloud.githubusercontent.com/assets/8742190/9415562/83397aae-4840-11e5-8f72-28dfffcc70a9.png)
+![pzytool](https://user-images.githubusercontent.com/47615360/56983324-c0a7e200-6b59-11e9-9003-af088391961c.png)
 # Pyztool
 Automatically install all Kali linux & development tools
 

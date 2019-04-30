@@ -24,7 +24,7 @@ https://www.youtube.com/watch?v=FybyU1V7NGU
 # Usage
 - Typing the number of a tool will install it
 - back : Go back
-- back : Go home
+- back : Go to the main menu
 
 # Warning
 Before updating your system , please remove all Kali-linux repositories to avoid any kind of problem .

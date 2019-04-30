@@ -6,10 +6,11 @@ Automatically install all Kali linux & development tools
 - Add Kali linux repositories
 - Remove kali linux repositories
 - Install Kali linux tools
+- Install development tools
 
 # Requirements
-- Python 2.7
-- An operating system (tested on Ubuntu)
+- Bash
+- An operating system (tested on Ubuntu and Debian)
 
 # Installation
 - sudo su

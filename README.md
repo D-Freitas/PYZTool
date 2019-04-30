@@ -35,5 +35,5 @@ Please visit https://github.com/TkaTheGod/PYZTool/issues
 # Contact
 - Website : https://tkathegod.tk/
 - Youtube : https://youtube.com/TkaTheGod
-- Twitter: @LionSec1
+- Twitter: @TkaTheGod
 - Email : tkathegod@ugnazi.com

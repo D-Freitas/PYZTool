@@ -9,12 +9,12 @@ if [[ $1 = '--update'  ]]; then
 fi
 
 #message below the menu
-prt="Insert the number of the tool to install it."
+prt="\e[38;5;99mInsert the number of the tool to install it."
 
 #menus
 
 a(){
-echo '
+echo -e '\e[93m\e[1m
  /$$$$$$$  /$$     /$$ /$$$$$$$$
 | $$__  $$|  $$   /$$/|_____ $$
 | $$  \ $$ \  $$ /$$/      /$$/
@@ -25,17 +25,17 @@ echo '
 |__/          |__/    |________/
 /*Coded by Tkaiper
 We are Pryzraky*/
-
-[1] KLTools
-[2] DeveloperKit
-[3] Add or remove kali repositories & upgrade
-[4] Help
+\e[1m
+\e[96m[\e[38;5;82m1\e[96m]\e[38;5;84m KLTools
+\e[96m[\e[38;5;82m2\e[96m]\e[38;5;84m DeveloperKit
+\e[96m[\e[38;5;82m3\e[96m]\e[38;5;84m Add or remove kali repositories & upgrade
+\e[96m[\e[38;5;82m4\e[96m]\e[38;5;84m Help
 
 '
 }
 
 b(){
-echo '
+echo -e '\e[93m\e[1m
  /$$   /$$ /$$    /$$$$$$$$                  /$$
 | $$  /$$/| $$   |__  $$__/                 | $$
 | $$ /$$/ | $$      | $$  /$$$$$$   /$$$$$$ | $$  /$$$$$$$
@@ -45,29 +45,29 @@ echo '
 | $$ \  $$| $$$$$$$$| $$|  $$$$$$/|  $$$$$$/| $$ /$$$$$$$/
 |__/  \__/|________/|__/ \______/  \______/ |__/|_______/
 
-[01] Information Gathering			[08] Exploitation Tools
-[02] Vulnerability Analysis			[09] Forensics Tools
-[03] Wireless Attacks				[10] Stress Testing
-[04] Web Applications				[11] Password Attacks
-[05] Sniffing & Spoofing			[12] Reverse Engineering
-[06] Maintaining Access				[13] Hardware Hacking
-[07] Reporting Tools 				[14] Extra
+\e[96m[\e[38;5;82m01\e[96m]\e[38;5;84m Information Gathering			\e[96m[\e[38;5;82m08\e[96m]\e[38;5;84m Exploitation Tools
+\e[96m[\e[38;5;82m02\e[96m]\e[38;5;84m Vulnerability Analysis			\e[96m[\e[38;5;82m09\e[96m]\e[38;5;84m Forensics Tools
+\e[96m[\e[38;5;82m03\e[96m]\e[38;5;84m Wireless Attacks				\e[96m[\e[38;5;82m10\e[96m]\e[38;5;84m Stress Testing
+\e[96m[\e[38;5;82m04\e[96m]\e[38;5;84m Web Applications				\e[96m[\e[38;5;82m11\e[96m]\e[38;5;84m Password Attacks
+\e[96m[\e[38;5;82m05\e[96m]\e[38;5;84m Sniffing & Spoofing			\e[96m[\e[38;5;82m12\e[96m]\e[38;5;84m Reverse Engineering
+\e[96m[\e[38;5;82m06\e[96m]\e[38;5;84m Maintaining Access				\e[96m[\e[38;5;82m13\e[96m]\e[38;5;84m Hardware Hacking
+\e[96m[\e[38;5;82m07\e[96m]\e[38;5;84m Reporting Tools 				\e[96m[\e[38;5;82m14\e[96m]\e[38;5;84m Extra
 
 '
 }
 
 cc(){
-echo '[1] apache2
-[2] MySQL Server
-[3] MySQL Client
-[4] PHP
-[5] Code editors
+echo -e '\e[96m[\e[38;5;82m1\e[96m]\e[38;5;84m apache2
+\e[96m[\e[38;5;82m2\e[96m]\e[38;5;84m MySQL Server
+\e[96m[\e[38;5;82m3\e[96m]\e[38;5;84m MySQL Client
+\e[96m[\e[38;5;82m4\e[96m]\e[38;5;84m PHP
+\e[96m[\e[38;5;82m5\e[96m]\e[38;5;84m Code editors
 
 '
 }
 
 c(){	
-echo '
+echo -e '\e[93m\e[1m
  /$$$$$$$                    /$$$$$$$$                  /$$
 | $$__  $$                  |__  $$__/                 | $$
 | $$  \ $$  /$$$$$$  /$$    /$$| $$  /$$$$$$   /$$$$$$ | $$  /$$$$$$$
@@ -80,16 +80,16 @@ echo '
 }
 
 d(){
-echo "
-[+] Code editors
+echo -e "\e[93m\e[1m
+\e[38;5;82m[+] Code editors
 
-[1] Sublime Text
-[2] vim
-[3] joe
-[4] emacs
-[5] Gedit
-[6] kwrite
-[7] geany
+\e[96m[\e[38;5;82m1\e[96m]\e[38;5;84m Sublime Text
+\e[96m[\e[38;5;82m2\e[96m]\e[38;5;84m vim
+\e[96m[\e[38;5;82m3\e[96m]\e[38;5;84m joe
+\e[96m[\e[38;5;82m4\e[96m]\e[38;5;84m emacs
+\e[96m[\e[38;5;82m5\e[96m]\e[38;5;84m Gedit
+\e[96m[\e[38;5;82m6\e[96m]\e[38;5;84m kwrite
+\e[96m[\e[38;5;82m7\e[96m]\e[38;5;84m geany
 
 
 $prt
@@ -103,44 +103,44 @@ e(){
 }
 
 f(){
-	read -p 'kat > ' y
+	read -p $'\e[91mkat >\e[0m ' y
 }
 
 #menus
 
 g(){
-echo "
-[+] Information_Gathering
+echo -e "\e[93m\e[1m
+\e[38;5;82m[+] Information_Gathering
 
-[01] acccheck					[30] lbd
-[02] ace-voip					[31] Maltego Teeth
-[03] Amap					[32] masscan
-[04] Automater					[33] Metagoofil
-[05] bing-ip2hosts				[34] Miranda
-[06] braa					[35] Nmap
-[07] CaseFile					[36] ntop
-[08] CDPSnarf					[37] p0f
-[09] cisco-torch				[38] Parsero
-[10] Cookie Cadger				[39] Recon-ng
-[11] copy-router-config				[40] SET
-[12] DMitry					[41] smtp-user-enum
-[13] dnmap					[42] snmpcheck
-[14] dnsenum					[43] sslcaudit
-[15] dnsmap					[44] SSLsplit
-[16] DNSRecon					[45] sslstrip
-[17] dnstracer					[46] SSLyze
-[18] dnswalk					[47] THC-IPV6
-[19] DotDotPwn					[48] theHarvester
-[20] enum4linux					[49] TLSSLed
-[21] enumIAX					[50] twofi
-[22] exploitdb					[51] URLCrazy
-[23] Fierce					[52] Wireshark
-[24] Firewalk					[53] WOL-E
-[25] fragroute					[54] Xplico
-[26] fragrouter					[55] iSMTP
-[27] Ghost Phisher				[56] InTrace
-[28] GoLismero					[57] hping3
-[29] goofile
+\e[96m[\e[38;5;82m01\e[96m]\e[38;5;84m acccheck					\e[96m[\e[38;5;82m30\e[96m]\e[38;5;84m lbd
+\e[96m[\e[38;5;82m02\e[96m]\e[38;5;84m ace-voip					\e[96m[\e[38;5;82m31\e[96m]\e[38;5;84m Maltego Teeth
+\e[96m[\e[38;5;82m03\e[96m]\e[38;5;84m Amap					\e[96m[\e[38;5;82m32\e[96m]\e[38;5;84m masscan
+\e[96m[\e[38;5;82m04\e[96m]\e[38;5;84m Automater					\e[96m[\e[38;5;82m33\e[96m]\e[38;5;84m Metagoofil
+\e[96m[\e[38;5;82m05\e[96m]\e[38;5;84m bing-ip2hosts				\e[96m[\e[38;5;82m34\e[96m]\e[38;5;84m Miranda
+\e[96m[\e[38;5;82m06\e[96m]\e[38;5;84m braa					\e[96m[\e[38;5;82m35\e[96m]\e[38;5;84m Nmap
+\e[96m[\e[38;5;82m07\e[96m]\e[38;5;84m CaseFile					\e[96m[\e[38;5;82m36\e[96m]\e[38;5;84m ntop
+\e[96m[\e[38;5;82m08\e[96m]\e[38;5;84m CDPSnarf					\e[96m[\e[38;5;82m37\e[96m]\e[38;5;84m p0f
+\e[96m[\e[38;5;82m09\e[96m]\e[38;5;84m cisco-torch				\e[96m[\e[38;5;82m38\e[96m]\e[38;5;84m Parsero
+\e[96m[\e[38;5;82m10\e[96m]\e[38;5;84m Cookie Cadger				\e[96m[\e[38;5;82m39\e[96m]\e[38;5;84m Recon-ng
+\e[96m[\e[38;5;82m11\e[96m]\e[38;5;84m copy-router-config				\e[96m[\e[38;5;82m40\e[96m]\e[38;5;84m SET
+\e[96m[\e[38;5;82m12\e[96m]\e[38;5;84m DMitry					\e[96m[\e[38;5;82m41\e[96m]\e[38;5;84m smtp-user-enum
+\e[96m[\e[38;5;82m13\e[96m]\e[38;5;84m dnmap					\e[96m[\e[38;5;82m42\e[96m]\e[38;5;84m snmpcheck
+\e[96m[\e[38;5;82m14\e[96m]\e[38;5;84m dnsenum					\e[96m[\e[38;5;82m43\e[96m]\e[38;5;84m sslcaudit
+\e[96m[\e[38;5;82m15\e[96m]\e[38;5;84m dnsmap					\e[96m[\e[38;5;82m44\e[96m]\e[38;5;84m SSLsplit
+\e[96m[\e[38;5;82m16\e[96m]\e[38;5;84m DNSRecon					\e[96m[\e[38;5;82m45\e[96m]\e[38;5;84m sslstrip
+\e[96m[\e[38;5;82m17\e[96m]\e[38;5;84m dnstracer					\e[96m[\e[38;5;82m46\e[96m]\e[38;5;84m SSLyze
+\e[96m[\e[38;5;82m18\e[96m]\e[38;5;84m dnswalk					\e[96m[\e[38;5;82m47\e[96m]\e[38;5;84m THC-IPV6
+\e[96m[\e[38;5;82m19\e[96m]\e[38;5;84m DotDotPwn					\e[96m[\e[38;5;82m48\e[96m]\e[38;5;84m theHarvester
+\e[96m[\e[38;5;82m20\e[96m]\e[38;5;84m enum4linux					\e[96m[\e[38;5;82m49\e[96m]\e[38;5;84m TLSSLed
+\e[96m[\e[38;5;82m21\e[96m]\e[38;5;84m enumIAX					\e[96m[\e[38;5;82m50\e[96m]\e[38;5;84m twofi
+\e[96m[\e[38;5;82m22\e[96m]\e[38;5;84m exploitdb					\e[96m[\e[38;5;82m51\e[96m]\e[38;5;84m URLCrazy
+\e[96m[\e[38;5;82m23\e[96m]\e[38;5;84m Fierce					\e[96m[\e[38;5;82m52\e[96m]\e[38;5;84m Wireshark
+\e[96m[\e[38;5;82m24\e[96m]\e[38;5;84m Firewalk					\e[96m[\e[38;5;82m53\e[96m]\e[38;5;84m WOL-E
+\e[96m[\e[38;5;82m25\e[96m]\e[38;5;84m fragroute					\e[96m[\e[38;5;82m54\e[96m]\e[38;5;84m Xplico
+\e[96m[\e[38;5;82m26\e[96m]\e[38;5;84m fragrouter					\e[96m[\e[38;5;82m55\e[96m]\e[38;5;84m iSMTP
+\e[96m[\e[38;5;82m27\e[96m]\e[38;5;84m Ghost Phisher				\e[96m[\e[38;5;82m56\e[96m]\e[38;5;84m InTrace
+\e[96m[\e[38;5;82m28\e[96m]\e[38;5;84m GoLismero					\e[96m[\e[38;5;82m57\e[96m]\e[38;5;84m hping3
+\e[96m[\e[38;5;82m29\e[96m]\e[38;5;84m goofile
 
 
 $prt
@@ -148,27 +148,27 @@ $prt
 }
 
 h(){
-echo "
-[+] Vulnerability Analysis
+echo -e "\e[93m\e[1m
+\e[38;5;82m[+] Vulnerability Analysis
 
-[01] BBQSQL					[19] ohrwurm
-[02] BED					[20] openvas-administrator
-[03] cisco-auditing-tool			[21] openvas-cli
-[04] cisco-global-exploiter			[22] openvas-manager
-[05] cisco-ocs					[23] openvas-scanner
-[06] cisco-torch				[24] Oscanner
-[07] copy-router-config				[25] Powerfuzzer
-[08] commix					[26] sfuzz
-[09] DBPwAudit					[27] SidGuesser
-[10] DoonaDot					[28] SIPArmyKnife
-[11] DotPwn					[29] sqlmap
-[12] Greenbone Security Assistant 		[30] Sqlninja
-[13] GSD					[31] sqlsus
-[14] HexorBase					[32] THC-IPV6
-[15] Inguma					[33] tnscmd10g
-[16] jSQL					[34] unix-privesc-check
-[17] Lynis					[35] Yersinia
-[18] Nmap
+\e[96m[\e[38;5;82m01\e[96m]\e[38;5;84m BBQSQL					\e[96m[\e[38;5;82m19\e[96m]\e[38;5;84m ohrwurm
+\e[96m[\e[38;5;82m02\e[96m]\e[38;5;84m BED					\e[96m[\e[38;5;82m20\e[96m]\e[38;5;84m openvas-administrator
+\e[96m[\e[38;5;82m03\e[96m]\e[38;5;84m cisco-auditing-tool			\e[96m[\e[38;5;82m21\e[96m]\e[38;5;84m openvas-cli
+\e[96m[\e[38;5;82m04\e[96m]\e[38;5;84m cisco-global-exploiter			\e[96m[\e[38;5;82m22\e[96m]\e[38;5;84m openvas-manager
+\e[96m[\e[38;5;82m05\e[96m]\e[38;5;84m cisco-ocs					\e[96m[\e[38;5;82m23\e[96m]\e[38;5;84m openvas-scanner
+\e[96m[\e[38;5;82m06\e[96m]\e[38;5;84m cisco-torch				\e[96m[\e[38;5;82m24\e[96m]\e[38;5;84m Oscanner
+\e[96m[\e[38;5;82m07\e[96m]\e[38;5;84m copy-router-config				\e[96m[\e[38;5;82m25\e[96m]\e[38;5;84m Powerfuzzer
+\e[96m[\e[38;5;82m08\e[96m]\e[38;5;84m commix					\e[96m[\e[38;5;82m26\e[96m]\e[38;5;84m sfuzz
+\e[96m[\e[38;5;82m09\e[96m]\e[38;5;84m DBPwAudit					\e[96m[\e[38;5;82m27\e[96m]\e[38;5;84m SidGuesser
+\e[96m[\e[38;5;82m10\e[96m]\e[38;5;84m DoonaDot					\e[96m[\e[38;5;82m28\e[96m]\e[38;5;84m SIPArmyKnife
+\e[96m[\e[38;5;82m11\e[96m]\e[38;5;84m DotPwn					\e[96m[\e[38;5;82m29\e[96m]\e[38;5;84m sqlmap
+\e[96m[\e[38;5;82m12\e[96m]\e[38;5;84m Greenbone Security Assistant 		\e[96m[\e[38;5;82m30\e[96m]\e[38;5;84m Sqlninja
+\e[96m[\e[38;5;82m13\e[96m]\e[38;5;84m GSD					\e[96m[\e[38;5;82m31\e[96m]\e[38;5;84m sqlsus
+\e[96m[\e[38;5;82m14\e[96m]\e[38;5;84m HexorBase					\e[96m[\e[38;5;82m32\e[96m]\e[38;5;84m THC-IPV6
+\e[96m[\e[38;5;82m15\e[96m]\e[38;5;84m Inguma					\e[96m[\e[38;5;82m33\e[96m]\e[38;5;84m tnscmd10g
+\e[96m[\e[38;5;82m16\e[96m]\e[38;5;84m jSQL					\e[96m[\e[38;5;82m34\e[96m]\e[38;5;84m unix-privesc-check
+\e[96m[\e[38;5;82m17\e[96m]\e[38;5;84m Lynis					\e[96m[\e[38;5;82m35\e[96m]\e[38;5;84m Yersinia
+\e[96m[\e[38;5;82m18\e[96m]\e[38;5;84m Nmap
 
 
 $prt
@@ -176,25 +176,25 @@ $prt
 }
 
 i(){
-echo "
-[+] Wireless Attacks
+echo -e "\e[93m\e[1m
+\e[38;5;82m[+] Wireless Attacks
 
-[01] Aircrack-ng				[17] KillerBee
-[02] Asleap					[18] Kismet
-[03] Bluelog					[19] mdk3
-[04] BlueMaho					[20] mfcuk
-[05] Bluepot					[21] mfoc
-[06] BlueRanger					[22] mfterm
-[07] Bluesnarfer				[23] Multimon-NG
-[08] Bully					[24) PixieWPS
-[09] coWPAtty					[25) Reaver
-[10] crackle					[26) redfang
-[11] eapmd5pass					[27) RTLSDR Scanner
-[12] Fern Wifi Cracker				[28) Spooftooph
-[13] Ghost Phisher				[29) Wifi Honey
-[14] GISKismet					[30) Wifitap
-[15] gr-scan					[31) Wifite
-[16] kalibrate-rtl
+\e[96m[\e[38;5;82m01\e[96m]\e[38;5;84m Aircrack-ng				\e[96m[\e[38;5;82m17\e[96m]\e[38;5;84m KillerBee
+\e[96m[\e[38;5;82m02\e[96m]\e[38;5;84m Asleap					\e[96m[\e[38;5;82m18\e[96m]\e[38;5;84m Kismet
+\e[96m[\e[38;5;82m03\e[96m]\e[38;5;84m Bluelog					\e[96m[\e[38;5;82m19\e[96m]\e[38;5;84m mdk3
+\e[96m[\e[38;5;82m04\e[96m]\e[38;5;84m BlueMaho					\e[96m[\e[38;5;82m20\e[96m]\e[38;5;84m mfcuk
+\e[96m[\e[38;5;82m05\e[96m]\e[38;5;84m Bluepot					\e[96m[\e[38;5;82m21\e[96m]\e[38;5;84m mfoc
+\e[96m[\e[38;5;82m06\e[96m]\e[38;5;84m BlueRanger					\e[96m[\e[38;5;82m22\e[96m]\e[38;5;84m mfterm
+\e[96m[\e[38;5;82m07\e[96m]\e[38;5;84m Bluesnarfer				\e[96m[\e[38;5;82m23\e[96m]\e[38;5;84m Multimon-NG
+\e[96m[\e[38;5;82m08\e[96m]\e[38;5;84m Bully					\e[96m[\e[38;5;82m24\e[96m)\e[38;5;84m PixieWPS
+\e[96m[\e[38;5;82m09\e[96m]\e[38;5;84m coWPAtty					\e[96m[\e[38;5;82m25\e[96m)\e[38;5;84m Reaver
+\e[96m[\e[38;5;82m10\e[96m]\e[38;5;84m crackle					\e[96m[\e[38;5;82m26\e[96m)\e[38;5;84m redfang
+\e[96m[\e[38;5;82m11\e[96m]\e[38;5;84m eapmd5pass					\e[96m[\e[38;5;82m27\e[96m)\e[38;5;84m RTLSDR Scanner
+\e[96m[\e[38;5;82m12\e[96m]\e[38;5;84m Fern Wifi Cracker				\e[96m[\e[38;5;82m28\e[96m)\e[38;5;84m Spooftooph
+\e[96m[\e[38;5;82m13\e[96m]\e[38;5;84m Ghost Phisher				\e[96m[\e[38;5;82m29\e[96m)\e[38;5;84m Wifi Honey
+\e[96m[\e[38;5;82m14\e[96m]\e[38;5;84m GISKismet					\e[96m[\e[38;5;82m30\e[96m)\e[38;5;84m Wifitap
+\e[96m[\e[38;5;82m15\e[96m]\e[38;5;84m gr-scan					\e[96m[\e[38;5;82m31\e[96m)\e[38;5;84m Wifite
+\e[96m[\e[38;5;82m16\e[96m]\e[38;5;84m kalibrate-rtl
 
 
 $prt
@@ -202,30 +202,30 @@ $prt
 }
 
 j(){
-echo "
-[+] Web Applications
+echo -e "\e[93m\e[1m
+\e[38;5;82m[+] Web Applications
 
-[01] apache-users				[22] Parsero
-[02] Arachni					[23] plecost
-[03] BBQSQL					[24] Powerfuzzer
-[04] BlindElephant				[25] ProxyStrike
-[05] Burp Suite					[26] Recon-ng
-[06] commix					[27] Skipfish
-[07] CutyCapt					[28] sqlmap
-[08] DAVTest					[29] Sqlninja
-[09] deblaze					[30] sqlsus
-[10] DIRB					[31] ua-tester
-[11] DirBuster					[32] Uniscan
-[12] fimap					[33] Vega
-[13] FunkLoad					[34] w3af
-[14] Grabber					[35] WebScarab
-[15] jboss-autopwn				[36] Webshag
-[16] joomscan					[37] WebSlayer
-[17] jSQL					[38] WebSploit
-[18] Maltego Teeth				[39] Wfuzz
-[19] Metasploit					[40] WPScan
-[20] PadBust					[41] XSSer
-[21] Paros					[42] zaproxy
+\e[96m[\e[38;5;82m01\e[96m]\e[38;5;84m apache-users				\e[96m[\e[38;5;82m22\e[96m]\e[38;5;84m Parsero
+\e[96m[\e[38;5;82m02\e[96m]\e[38;5;84m Arachni					\e[96m[\e[38;5;82m23\e[96m]\e[38;5;84m plecost
+\e[96m[\e[38;5;82m03\e[96m]\e[38;5;84m BBQSQL					\e[96m[\e[38;5;82m24\e[96m]\e[38;5;84m Powerfuzzer
+\e[96m[\e[38;5;82m04\e[96m]\e[38;5;84m BlindElephant				\e[96m[\e[38;5;82m25\e[96m]\e[38;5;84m ProxyStrike
+\e[96m[\e[38;5;82m05\e[96m]\e[38;5;84m Burp Suite					\e[96m[\e[38;5;82m26\e[96m]\e[38;5;84m Recon-ng
+\e[96m[\e[38;5;82m06\e[96m]\e[38;5;84m commix					\e[96m[\e[38;5;82m27\e[96m]\e[38;5;84m Skipfish
+\e[96m[\e[38;5;82m07\e[96m]\e[38;5;84m CutyCapt					\e[96m[\e[38;5;82m28\e[96m]\e[38;5;84m sqlmap
+\e[96m[\e[38;5;82m08\e[96m]\e[38;5;84m DAVTest					\e[96m[\e[38;5;82m29\e[96m]\e[38;5;84m Sqlninja
+\e[96m[\e[38;5;82m09\e[96m]\e[38;5;84m deblaze					\e[96m[\e[38;5;82m30\e[96m]\e[38;5;84m sqlsus
+\e[96m[\e[38;5;82m10\e[96m]\e[38;5;84m DIRB					\e[96m[\e[38;5;82m31\e[96m]\e[38;5;84m ua-tester
+\e[96m[\e[38;5;82m11\e[96m]\e[38;5;84m DirBuster					\e[96m[\e[38;5;82m32\e[96m]\e[38;5;84m Uniscan
+\e[96m[\e[38;5;82m12\e[96m]\e[38;5;84m fimap					\e[96m[\e[38;5;82m33\e[96m]\e[38;5;84m Vega
+\e[96m[\e[38;5;82m13\e[96m]\e[38;5;84m FunkLoad					\e[96m[\e[38;5;82m34\e[96m]\e[38;5;84m w3af
+\e[96m[\e[38;5;82m14\e[96m]\e[38;5;84m Grabber					\e[96m[\e[38;5;82m35\e[96m]\e[38;5;84m WebScarab
+\e[96m[\e[38;5;82m15\e[96m]\e[38;5;84m jboss-autopwn				\e[96m[\e[38;5;82m36\e[96m]\e[38;5;84m Webshag
+\e[96m[\e[38;5;82m16\e[96m]\e[38;5;84m joomscan					\e[96m[\e[38;5;82m37\e[96m]\e[38;5;84m WebSlayer
+\e[96m[\e[38;5;82m17\e[96m]\e[38;5;84m jSQL					\e[96m[\e[38;5;82m38\e[96m]\e[38;5;84m WebSploit
+\e[96m[\e[38;5;82m18\e[96m]\e[38;5;84m Maltego Teeth				\e[96m[\e[38;5;82m39\e[96m]\e[38;5;84m Wfuzz
+\e[96m[\e[38;5;82m19\e[96m]\e[38;5;84m Metasploit					\e[96m[\e[38;5;82m40\e[96m]\e[38;5;84m WPScan
+\e[96m[\e[38;5;82m20\e[96m]\e[38;5;84m PadBust					\e[96m[\e[38;5;82m41\e[96m]\e[38;5;84m XSSer
+\e[96m[\e[38;5;82m21\e[96m]\e[38;5;84m Paros					\e[96m[\e[38;5;82m42\e[96m]\e[38;5;84m zaproxy
 
 
 $prt
@@ -233,25 +233,25 @@ $prt
 }
 
 k(){
-echo "
-[+] Sniffing & Spoofing
+echo -e "\e[93m\e[1m
+\e[38;5;82m[+] Sniffing & Spoofing
 
-[01] Burp Suite					[17] rtpmixsound
-[02] DNSChef					[18] sctpscan
-[03] fiked					[19] SIPArmyKnife
-[04] hamster-sidejack				[20] SIPp
-[05] HexInject					[21] SIPVicious
-[06] iaxflood					[22] SniffJoke
-[07] inviteflood				[23] SSLsplit
-[08] iSMTP					[24] sslstrip
-[09] isr-evilgrade				[25] THC-IPV6
-[10] mitmproxy					[26] VoIPHopper
-[11] ohrwurm					[27] WebScarab
-[12] protos-sip					[28] Wifi Honey
-[13] rebind					[29] Wireshark
-[14] responder					[30] xspy
-[15] rtpbreak					[31] Yersinia
-[16] rtpinsertsound				[32] zaproxy
+\e[96m[\e[38;5;82m01\e[96m]\e[38;5;84m Burp Suite					\e[96m[\e[38;5;82m17\e[96m]\e[38;5;84m rtpmixsound
+\e[96m[\e[38;5;82m02\e[96m]\e[38;5;84m DNSChef					\e[96m[\e[38;5;82m18\e[96m]\e[38;5;84m sctpscan
+\e[96m[\e[38;5;82m03\e[96m]\e[38;5;84m fiked					\e[96m[\e[38;5;82m19\e[96m]\e[38;5;84m SIPArmyKnife
+\e[96m[\e[38;5;82m04\e[96m]\e[38;5;84m hamster-sidejack				\e[96m[\e[38;5;82m20\e[96m]\e[38;5;84m SIPp
+\e[96m[\e[38;5;82m05\e[96m]\e[38;5;84m HexInject					\e[96m[\e[38;5;82m21\e[96m]\e[38;5;84m SIPVicious
+\e[96m[\e[38;5;82m06\e[96m]\e[38;5;84m iaxflood					\e[96m[\e[38;5;82m22\e[96m]\e[38;5;84m SniffJoke
+\e[96m[\e[38;5;82m07\e[96m]\e[38;5;84m inviteflood				\e[96m[\e[38;5;82m23\e[96m]\e[38;5;84m SSLsplit
+\e[96m[\e[38;5;82m08\e[96m]\e[38;5;84m iSMTP					\e[96m[\e[38;5;82m24\e[96m]\e[38;5;84m sslstrip
+\e[96m[\e[38;5;82m09\e[96m]\e[38;5;84m isr-evilgrade				\e[96m[\e[38;5;82m25\e[96m]\e[38;5;84m THC-IPV6
+\e[96m[\e[38;5;82m10\e[96m]\e[38;5;84m mitmproxy					\e[96m[\e[38;5;82m26\e[96m]\e[38;5;84m VoIPHopper
+\e[96m[\e[38;5;82m11\e[96m]\e[38;5;84m ohrwurm					\e[96m[\e[38;5;82m27\e[96m]\e[38;5;84m WebScarab
+\e[96m[\e[38;5;82m12\e[96m]\e[38;5;84m protos-sip					\e[96m[\e[38;5;82m28\e[96m]\e[38;5;84m Wifi Honey
+\e[96m[\e[38;5;82m13\e[96m]\e[38;5;84m rebind					\e[96m[\e[38;5;82m29\e[96m]\e[38;5;84m Wireshark
+\e[96m[\e[38;5;82m14\e[96m]\e[38;5;84m responder					\e[96m[\e[38;5;82m30\e[96m]\e[38;5;84m xspy
+\e[96m[\e[38;5;82m15\e[96m]\e[38;5;84m rtpbreak					\e[96m[\e[38;5;82m31\e[96m]\e[38;5;84m Yersinia
+\e[96m[\e[38;5;82m16\e[96m]\e[38;5;84m rtpinsertsound				\e[96m[\e[38;5;82m32\e[96m]\e[38;5;84m zaproxy
 
 
 $prt
@@ -259,25 +259,25 @@ $prt
 }
 
 l(){
-echo "
-[+] Maintaining Access
+echo -e "\e[93m\e[1m
+\e[38;5;82m[+] Maintaining Access
 
-[01] CryptCat
-[02] Cymothoa
-[03] dbd
-[04] dns2tcp
-[05] http-tunnel
-[06] HTTPTunnel
-[07] Intersect
-[08] Nishang
-[09] polenum
-[10] PowerSploit
-[11] pwnat
-[12] RidEnum
-[13] sbd
-[14] U3-Pwn
-[15] Webshells
-[16] Weevely
+\e[96m[\e[38;5;82m01\e[96m]\e[38;5;84m CryptCat
+\e[96m[\e[38;5;82m02\e[96m]\e[38;5;84m Cymothoa
+\e[96m[\e[38;5;82m03\e[96m]\e[38;5;84m dbd
+\e[96m[\e[38;5;82m04\e[96m]\e[38;5;84m dns2tcp
+\e[96m[\e[38;5;82m05\e[96m]\e[38;5;84m http-tunnel
+\e[96m[\e[38;5;82m06\e[96m]\e[38;5;84m HTTPTunnel
+\e[96m[\e[38;5;82m07\e[96m]\e[38;5;84m Intersect
+\e[96m[\e[38;5;82m08\e[96m]\e[38;5;84m Nishang
+\e[96m[\e[38;5;82m09\e[96m]\e[38;5;84m polenum
+\e[96m[\e[38;5;82m10\e[96m]\e[38;5;84m PowerSploit
+\e[96m[\e[38;5;82m11\e[96m]\e[38;5;84m pwnat
+\e[96m[\e[38;5;82m12\e[96m]\e[38;5;84m RidEnum
+\e[96m[\e[38;5;82m13\e[96m]\e[38;5;84m sbd
+\e[96m[\e[38;5;82m14\e[96m]\e[38;5;84m U3-Pwn
+\e[96m[\e[38;5;82m15\e[96m]\e[38;5;84m Webshells
+\e[96m[\e[38;5;82m16\e[96m]\e[38;5;84m Weevely
 
 
 $prt
@@ -285,18 +285,19 @@ $prt
 }
 
 m(){
-echo "
-[+] Reporting Tools
+echo -e "\e[93m\e[1m
+\e[38;5;82m[+] Reporting Tools
 
-[1] CaseFile
-[2] CutyCapt
-[3] dos2unix
-[4] Dradis
-[5] KeepNote
-[6] MagicTree
-[7] Metagoofil
-[8] Nipper-ng
-[9] pipal
+\e[96m[\e[38;5;82m1\e[96m]\e[38;5;84m CaseFile
+\e[96m[\e[38;5;82m1\e[96m]\e[38;5;84m CutyCapt
+\e[96m[\e[38;5;82m1\e[96m]\e[38;5;84m dos2unix
+\e[96m[\e[38;5;82m1\e[96m]\e[38;5;84m Dradis
+\e[96m[\e[38;5;82m1\e[96m]\e[38;5;84m android-sdk
+\e[96m[\e[38;5;82m1\e[96m]\e[38;5;84m android-sdk
+\e[96m[\e[38;5;82m1\e[96m]\e[38;5;84m android-sdk
+\e[96m[\e[38;5;82m1\e[96m]\e[38;5;84m android-sdk
+\e[96m[\e[38;5;82m1\e[96m]\e[38;5;84m android-sdk
+\e[96m[\e[38;5;82m1\e[96m]\e[38;5;84m android-sdk
 
 
 $prt
@@ -304,26 +305,26 @@ $prt
 }
 
 n(){
-echo "
-[+] Exploitation Tools
+echo -e "\e[93m\e[1m
+\e[38;5;82m[+] Exploitation Tools
 
-[01] Armitage
-[02] Backdoor Factory
-[03] BeEF
-[04] cisco-auditing-tool
-[05] cisco-global-exploiter
-[06] cisco-ocs
-[07] cisco-torch
-[08] commix
-[09] crackle
-[10] jboss-autopwn
-[11] Linux Exploit Suggester
-[12] Maltego Teeth
-[13] SET
-[14] ShellNoob
-[15] sqlmap
-[16] THC-IPV6
-[17] Yersinia
+\e[96m[\e[38;5;82m01\e[96m]\e[38;5;84m Armitage
+\e[96m[\e[38;5;82m02\e[96m]\e[38;5;84m Backdoor Factory
+\e[96m[\e[38;5;82m03\e[96m]\e[38;5;84m BeEF
+\e[96m[\e[38;5;82m04\e[96m]\e[38;5;84m cisco-auditing-tool
+\e[96m[\e[38;5;82m05\e[96m]\e[38;5;84m cisco-global-exploiter
+\e[96m[\e[38;5;82m06\e[96m]\e[38;5;84m cisco-ocs
+\e[96m[\e[38;5;82m07\e[96m]\e[38;5;84m cisco-torch
+\e[96m[\e[38;5;82m08\e[96m]\e[38;5;84m commix
+\e[96m[\e[38;5;82m09\e[96m]\e[38;5;84m crackle
+\e[96m[\e[38;5;82m10\e[96m]\e[38;5;84m jboss-autopwn
+\e[96m[\e[38;5;82m11\e[96m]\e[38;5;84m Linux Exploit Suggester
+\e[96m[\e[38;5;82m12\e[96m]\e[38;5;84m Maltego Teeth
+\e[96m[\e[38;5;82m13\e[96m]\e[38;5;84m SET
+\e[96m[\e[38;5;82m14\e[96m]\e[38;5;84m ShellNoob
+\e[96m[\e[38;5;82m15\e[96m]\e[38;5;84m sqlmap
+\e[96m[\e[38;5;82m16\e[96m]\e[38;5;84m THC-IPV6
+\e[96m[\e[38;5;82m17\e[96m]\e[38;5;84m Yersinia
 
 
 $prt
@@ -331,21 +332,21 @@ $prt
 }
 
 o(){
-echo "
-[+] Forensics Tools
+echo -e "\e[93m\e[1m
+\e[38;5;82m[+] Forensics Tools
 
-[01] Binwalk					[13] Galleta
-[02] bulk-extractor				[14] Guymager
-[03] Capstone					[15] iPhone Backup Analyzer
-[04] chntpw					[16] p0f
-[05] Cuckoo					[17] pdf-parser
-[06] dc3dd					[18] pdfid
-[07] ddrescue					[19] pdgmail
-[08] DFF					[20] peepdf
-[09] diStorm3					[21] RegRipper
-[10] Dumpzilla					[22] Volatility
-[11] extundelete				[23] Xplico
-[12] Foremost
+\e[96m[\e[38;5;82m01\e[96m]\e[38;5;84m Binwalk					\e[96m[\e[38;5;82m13\e[96m]\e[38;5;84m Galleta
+\e[96m[\e[38;5;82m02\e[96m]\e[38;5;84m bulk-extractor				\e[96m[\e[38;5;82m14\e[96m]\e[38;5;84m Guymager
+\e[96m[\e[38;5;82m03\e[96m]\e[38;5;84m Capstone					\e[96m[\e[38;5;82m15\e[96m]\e[38;5;84m iPhone Backup Analyzer
+\e[96m[\e[38;5;82m04\e[96m]\e[38;5;84m chntpw					\e[96m[\e[38;5;82m16\e[96m]\e[38;5;84m p0f
+\e[96m[\e[38;5;82m05\e[96m]\e[38;5;84m Cuckoo					\e[96m[\e[38;5;82m17\e[96m]\e[38;5;84m pdf-parser
+\e[96m[\e[38;5;82m06\e[96m]\e[38;5;84m dc3dd					\e[96m[\e[38;5;82m18\e[96m]\e[38;5;84m pdfid
+\e[96m[\e[38;5;82m07\e[96m]\e[38;5;84m ddrescue					\e[96m[\e[38;5;82m19\e[96m]\e[38;5;84m pdgmail
+\e[96m[\e[38;5;82m08\e[96m]\e[38;5;84m DFF					\e[96m[\e[38;5;82m20\e[96m]\e[38;5;84m peepdf
+\e[96m[\e[38;5;82m09\e[96m]\e[38;5;84m diStorm3					\e[96m[\e[38;5;82m21\e[96m]\e[38;5;84m RegRipper
+\e[96m[\e[38;5;82m10\e[96m]\e[38;5;84m Dumpzilla					\e[96m[\e[38;5;82m22\e[96m]\e[38;5;84m Volatility
+\e[96m[\e[38;5;82m11\e[96m]\e[38;5;84m extundelete				\e[96m[\e[38;5;82m23\e[96m]\e[38;5;84m Xplico
+\e[96m[\e[38;5;82m12\e[96m]\e[38;5;84m Foremost
 
 
 $prt
@@ -353,23 +354,23 @@ $prt
 }
 
 p(){
-echo "
-[+] Stress Testing
+echo -e "\e[93m\e[1m
+\e[38;5;82m[+] Stress Testing
 
-[01] DHCPig
-[02] FunkLoad
-[03] iaxflood
-[04] Inundator
-[05] inviteflood
-[06] ipv6-toolkit
-[07] mdk3
-[08] Reaver
-[09] rtpflood
-[10] SlowHTTPTest
-[11] t50
-[12] Termineter
-[13] THC-IPV6
-[14] THC-SSL-DOS
+\e[96m[\e[38;5;82m01\e[96m]\e[38;5;84m DHCPig
+\e[96m[\e[38;5;82m02\e[96m]\e[38;5;84m FunkLoad
+\e[96m[\e[38;5;82m03\e[96m]\e[38;5;84m iaxflood
+\e[96m[\e[38;5;82m04\e[96m]\e[38;5;84m Inundator
+\e[96m[\e[38;5;82m05\e[96m]\e[38;5;84m inviteflood
+\e[96m[\e[38;5;82m06\e[96m]\e[38;5;84m ipv6-toolkit
+\e[96m[\e[38;5;82m07\e[96m]\e[38;5;84m mdk3
+\e[96m[\e[38;5;82m08\e[96m]\e[38;5;84m Reaver
+\e[96m[\e[38;5;82m09\e[96m]\e[38;5;84m rtpflood
+\e[96m[\e[38;5;82m10\e[96m]\e[38;5;84m SlowHTTPTest
+\e[96m[\e[38;5;82m11\e[96m]\e[38;5;84m t50
+\e[96m[\e[38;5;82m12\e[96m]\e[38;5;84m Termineter
+\e[96m[\e[38;5;82m13\e[96m]\e[38;5;84m THC-IPV6
+\e[96m[\e[38;5;82m14\e[96m]\e[38;5;84m THC-SSL-DOS
 
 
 $prt
@@ -377,27 +378,27 @@ $prt
 }
 
 q(){
-echo "
-[+] Password Attacks
+echo -e "\e[93m\e[1m
+\e[38;5;82m[+] Password Attacks
 
-[01] acccheck					[19] Maskprocessor
-[02] Burp Suite					[20] multiforcer
-[03] CeWL					[21] Ncrack
-[04] chntpw					[22] oclgausscrack
-[05] cisco-auditing-tool			[23] PACK
-[06] CmosPwd					[24] patator
-[07] creddump					[25] phrasendrescher
-[08] crunch					[26] polenum
-[09] DBPwAudit					[27] RainbowCrack
-[10] findmyhash					[28] rcracki-mt
-[11] gpp-decrypt				[29] RSMangler
-[12] hash-identifier				[30] SQLdict
-[13] HexorBase					[31] Statsprocessor
-[14] THC-Hydra					[32] THC-pptp-bruter
-[15] John the Ripper				[33] TrueCrack
-[16] Johnny					[34] WebScarab
-[17] keimpx					[35] wordlists
-[18] Maltego Teeth				[36] zaproxy
+\e[96m[\e[38;5;82m01\e[96m]\e[38;5;84m acccheck					\e[96m[\e[38;5;82m19\e[96m]\e[38;5;84m Maskprocessor
+\e[96m[\e[38;5;82m02\e[96m]\e[38;5;84m Burp Suite					\e[96m[\e[38;5;82m20\e[96m]\e[38;5;84m multiforcer
+\e[96m[\e[38;5;82m03\e[96m]\e[38;5;84m CeWL					\e[96m[\e[38;5;82m21\e[96m]\e[38;5;84m Ncrack
+\e[96m[\e[38;5;82m04\e[96m]\e[38;5;84m chntpw					\e[96m[\e[38;5;82m22\e[96m]\e[38;5;84m oclgausscrack
+\e[96m[\e[38;5;82m05\e[96m]\e[38;5;84m cisco-auditing-tool			\e[96m[\e[38;5;82m23\e[96m]\e[38;5;84m PACK
+\e[96m[\e[38;5;82m06\e[96m]\e[38;5;84m CmosPwd					\e[96m[\e[38;5;82m24\e[96m]\e[38;5;84m patator
+\e[96m[\e[38;5;82m07\e[96m]\e[38;5;84m creddump					\e[96m[\e[38;5;82m25\e[96m]\e[38;5;84m phrasendrescher
+\e[96m[\e[38;5;82m08\e[96m]\e[38;5;84m crunch					\e[96m[\e[38;5;82m26\e[96m]\e[38;5;84m polenum
+\e[96m[\e[38;5;82m09\e[96m]\e[38;5;84m DBPwAudit					\e[96m[\e[38;5;82m27\e[96m]\e[38;5;84m RainbowCrack
+\e[96m[\e[38;5;82m10\e[96m]\e[38;5;84m findmyhash					\e[96m[\e[38;5;82m28\e[96m]\e[38;5;84m rcracki-mt
+\e[96m[\e[38;5;82m11\e[96m]\e[38;5;84m gpp-decrypt				\e[96m[\e[38;5;82m29\e[96m]\e[38;5;84m RSMangler
+\e[96m[\e[38;5;82m12\e[96m]\e[38;5;84m hash-identifier				\e[96m[\e[38;5;82m30\e[96m]\e[38;5;84m SQLdict
+\e[96m[\e[38;5;82m13\e[96m]\e[38;5;84m HexorBase					\e[96m[\e[38;5;82m31\e[96m]\e[38;5;84m Statsprocessor
+\e[96m[\e[38;5;82m14\e[96m]\e[38;5;84m THC-Hydra					\e[96m[\e[38;5;82m32\e[96m]\e[38;5;84m THC-pptp-bruter
+\e[96m[\e[38;5;82m15\e[96m]\e[38;5;84m John the Ripper				\e[96m[\e[38;5;82m33\e[96m]\e[38;5;84m TrueCrack
+\e[96m[\e[38;5;82m16\e[96m]\e[38;5;84m Johnny					\e[96m[\e[38;5;82m34\e[96m]\e[38;5;84m WebScarab
+\e[96m[\e[38;5;82m17\e[96m]\e[38;5;84m keimpx					\e[96m[\e[38;5;82m35\e[96m]\e[38;5;84m wordlists
+\e[96m[\e[38;5;82m18\e[96m]\e[38;5;84m Maltego Teeth				\e[96m[\e[38;5;82m36\e[96m]\e[38;5;84m zaproxy
 
 
 $prt
@@ -405,20 +406,20 @@ $prt
 }
 
 r(){
-echo "
-[+] Reverse Engineering
+echo -e "\e[93m\e[1m
+\e[38;5;82m[+] Reverse Engineering
 
-[01] apktool
-[02] dex2jar
-[03] diStorm3
-[04] edb-debugger
-[05] jad
-[06] javasnoop
-[07] JD-GUI
-[08] OllyDbg
-[09] smali
-[10] Valgrind
-[11] YARA
+\e[96m[\e[38;5;82m01\e[96m]\e[38;5;84m apktool
+\e[96m[\e[38;5;82m02\e[96m]\e[38;5;84m dex2jar
+\e[96m[\e[38;5;82m03\e[96m]\e[38;5;84m diStorm3
+\e[96m[\e[38;5;82m04\e[96m]\e[38;5;84m edb-debugger
+\e[96m[\e[38;5;82m05\e[96m]\e[38;5;84m jad
+\e[96m[\e[38;5;82m06\e[96m]\e[38;5;84m javasnoop
+\e[96m[\e[38;5;82m07\e[96m]\e[38;5;84m JD-GUI
+\e[96m[\e[38;5;82m08\e[96m]\e[38;5;84m OllyDbg
+\e[96m[\e[38;5;82m09\e[96m]\e[38;5;84m smali
+\e[96m[\e[38;5;82m10\e[96m]\e[38;5;84m Valgrind
+\e[96m[\e[38;5;82m11\e[96m]\e[38;5;84m YARA
 
 
 $prt
@@ -426,15 +427,15 @@ $prt
 }
 
 s(){
-echo "
-[+] Hardware Hacking
+echo -e "\e[93m\e[1m
+\e[38;5;82m[+] Hardware Hacking
 
-[1] android-sdk
-[2] apktool
-[3] Arduino
-[4] dex2jar
-[5] Sakis3G
-[6] smali
+\e[96m[\e[38;5;82m1\e[96m]\e[38;5;84m android-sdk
+\e[96m[\e[38;5;82m2\e[96m]\e[38;5;84m apktool
+\e[96m[\e[38;5;82m3\e[96m]\e[38;5;84m Arduino
+\e[96m[\e[38;5;82m4\e[96m]\e[38;5;84m dex2jar
+\e[96m[\e[38;5;82m5\e[96m]\e[38;5;84m Sakis3G
+\e[96m[\e[38;5;82m6\e[96m]\e[38;5;84m smali
 
 
 $prt
@@ -442,11 +443,11 @@ $prt
 }
 
 ets(){
-echo "
-[+] Extras
+echo -e "\e[93m\e[1m
+\e[38;5;82m[+] Extras
 
-[1] Wifresti
-[2] Squid3
+\e[96m[\e[38;5;82m1\e[96m]\e[38;5;84m Wifresti
+\e[96m[\e[38;5;82m2\e[96m]\e[38;5;84m Squid3
 
 
 $prt
@@ -454,7 +455,7 @@ $prt
 }
 
 t(){
-echo "
+echo -e "\e[93m\e[1m
                 1   1
                   0   0
                    10  11
@@ -481,10 +482,10 @@ echo "
                                  1
                                  1
 
-[1] Add kali repositories
-[2] Add kali repositories and determine where to save and set file name
-]3] Remove all kali repositories
-[4] Update
+\e[96m[\e[38;5;82m1\e[96m]\e[38;5;84m Add kali repositories
+\e[96m[\e[38;5;82m2\e[96m]\e[38;5;84m Add kali repositories and determine where to save and set file name
+\e[96m]\e[38;5;82m3\e[96m]\e[38;5;84m Remove all kali repositories
+\e[96m[\e[38;5;82m4\e[96m]\e[38;5;84m Update
 
 "
 }
@@ -498,14 +499,14 @@ a
 
 	while true
 	do
-		read -p 'kat > ' z
+		read -p $'\e[91mkat >\e[0m ' z
 
 		if [ $z = 1 ]; then
 			clear
 			b #KLTools menu
 			while true
 			do
-				read -p 'kat > ' x
+				read -p $'\e[91mkat >\e[0m ' x
 				case $x in
 					1)
 						tool=("" "acccheck" "ace-voip" "amap" "automater" "none" "braa" "casefile" "cdpsnarf" "cisco-torch" "cookie-cadger" "copy-router-config" "dmitry" "dnmap" "dnsenum"
@@ -872,7 +873,7 @@ a
 			cc #Code editors menu
 			while true
 			do
-				read -p 'kat > ' w
+				read -p $'\e[91mkat >\e[0m '  w
 				if [[ $w = ?([1-4]) ]]; then
 					opts=("" "apache2" "mysql-server" "mysql-client" "php")
 					apt-get install ${opts[$w]}
@@ -881,7 +882,7 @@ a
 					while true
 					do
 						editor=("" "sublime-text" "vim" "joe" "emacs" "gedit" "kwrite" "geany")
-						read -p 'kat > ' p
+						read -p $'\e[91mkat >\e[0m ' p
 						[ $p = 1 ] && wget -qO - https://download.sublimetext.com/sublimehq-pub.gpg | sudo apt-key add - && apt-get install -y apt-transport-https && echo "deb https://download.sublimetext.com/ apt/stable/" | sudo tee /etc/apt/sources.list.d/sublime-text.list && apt-get update && apt-get install sublime-text
 					        if [[ $p = ?([2-7]) ]]; then
 						    apt-get install ${editor[$p]}
@@ -916,21 +917,21 @@ a
 			t
 			while true
 			do
-				read -p 'kat > ' w
+				read -p $'\e[91mkat >\e[0m ' w
 				case $w in
 					1)
-						echo -e "deb http://http.kali.org/kali kali-rolling main contrib non-free\ndeb-src http://http.kali.org/kali kali-rolling main contrib non-free" > /etc/apt/sources.list.d/kali.list && wget -q -O - https://archive.kali.org/archive-key.asc | apt-key add && echo '[+] Ready!';;
+						echo -e "deb http://http.kali.org/kali kali-rolling main contrib non-free\ndeb-src http://http.kali.org/kali kali-rolling main contrib non-free" > /etc/apt/sources.list.d/kali.list && wget -q -O - https://archive.kali.org/archive-key.asc | apt-key add && echo -e '\e[38;5;99m[+] Ready!';;
 					2)
-						read -p 'dir > ' dir
-						read -p 'file > ' file
-						echo -e "deb http://http.kali.org/kali kali-rolling main contrib non-free\ndeb-src http://http.kali.org/kali kali-rolling main contrib non-free" > $dir/$file && wget -q -O - https://archive.kali.org/archive-key.asc | apt-key add && echo '[+] Ready!';;
+						read -p $'\e[91mdir >\e[0m ' dir
+						read -p $'\e[91mfile >\e[0m ' file
+						echo -e "deb http://http.kali.org/kali kali-rolling main contrib non-free\ndeb-src http://http.kali.org/kali kali-rolling main contrib non-free" > $dir/$file && wget -q -O - https://archive.kali.org/archive-key.asc | apt-key add && echo -e '\e[38;5;99m[+] Ready!';;
 					3)
 						if [ -z $dir ]; then
 							rm /etc/apt/sources.list.d/kali.list
 						elif [ -n $dir ]; then
 							rm $dir/$file
 						fi
-						echo '[+] Ready!';;
+						echo -e '\e[38;5;99m[+] Ready!';;
 					4)
 						apt-get update;;
 					back)

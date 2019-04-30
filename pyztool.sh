@@ -862,7 +862,8 @@ a
 						clear
 						a
 						break;;
-						 
+					home)
+						bash $0; exit;; 
 					exit)
 						exit;;
 				esac

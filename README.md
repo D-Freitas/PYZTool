@@ -15,7 +15,7 @@ Automatically install all Kali linux & development tools
 # Installation
 - sudo su
 - git clone https://github.com/TkaTheGod/PYZTool.git && cp PYZTool/pyztool.sh /usr/bin/pyztool
-- chmod +x /usr/bin/pyztool.sh
+- chmod +x /usr/bin/pyztool
 - sudo pyztool 
 
 # Video

@@ -24,7 +24,7 @@ echo -e '\e[93m\e[1m
 | $$          | $$     /$$$$$$$$
 |__/          |__/    |________/
 /*Coded by Tkaiper
-We are Pryzraky*/
+We are PRdV Team*/
 \e[1m
 \e[96m[\e[38;5;82m1\e[96m]\e[38;5;84m KLTools
 \e[96m[\e[38;5;82m2\e[96m]\e[38;5;84m DeveloperKit

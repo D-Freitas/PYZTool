@@ -666,12 +666,12 @@ a
 						done;;
 
 					7)
-						tool=("" "casefile" "cutycapt" "dos2unix" "dradis" "keepnote" "magictree" "metagoofil" "nipper-ng" "pipal")
+						tool=("" "casefile" "cutycapt" "dos2unix" "dradis" "keepnote" "magictree" "metagoofil" "nipper-ng" "pipal" "android-sdk")
 						m
 						while true
 						do
 							f
-							if [[ $y = ?([1-9]) ]]; then
+							if [[ $y = ?(+|-)+([0-9]) ]]; then
 								e #can't be zero and none of the options that require commands besides apt-get install, if this condition is true, run apt-get install
 							elif [ $y = "back" ]; then
 								clear

@@ -287,16 +287,16 @@ m(){
 echo -e "\e[93m\e[1m
 \e[38;5;82m[+] Reporting Tools
 
-\e[96m[\e[38;5;82m1\e[96m]\e[38;5;84m CaseFile
-\e[96m[\e[38;5;82m1\e[96m]\e[38;5;84m CutyCapt
-\e[96m[\e[38;5;82m1\e[96m]\e[38;5;84m dos2unix
-\e[96m[\e[38;5;82m1\e[96m]\e[38;5;84m Dradis
-\e[96m[\e[38;5;82m1\e[96m]\e[38;5;84m android-sdk
-\e[96m[\e[38;5;82m1\e[96m]\e[38;5;84m android-sdk
-\e[96m[\e[38;5;82m1\e[96m]\e[38;5;84m android-sdk
-\e[96m[\e[38;5;82m1\e[96m]\e[38;5;84m android-sdk
-\e[96m[\e[38;5;82m1\e[96m]\e[38;5;84m android-sdk
-\e[96m[\e[38;5;82m1\e[96m]\e[38;5;84m android-sdk
+\e[96m[\e[38;5;82m01\e[96m]\e[38;5;84m CaseFile
+\e[96m[\e[38;5;82m02\e[96m]\e[38;5;84m CutyCapt
+\e[96m[\e[38;5;82m03\e[96m]\e[38;5;84m dos2unix
+\e[96m[\e[38;5;82m04\e[96m]\e[38;5;84m Dradis
+\e[96m[\e[38;5;82m05\e[96m]\e[38;5;84m KeepNote
+\e[96m[\e[38;5;82m06\e[96m]\e[38;5;84m MagicTree
+\e[96m[\e[38;5;82m07\e[96m]\e[38;5;84m Metagoofil
+\e[96m[\e[38;5;82m08\e[96m]\e[38;5;84m nipper-ng
+\e[96m[\e[38;5;82m09\e[96m]\e[38;5;84m Pipal
+\e[96m[\e[38;5;82m10\e[96m]\e[38;5;84m android-sdk
 
 
 $prt
@@ -671,7 +671,7 @@ a
 						while true
 						do
 							f
-							if [[ $y = ?([1-9]) ]]; then 
+							if [[ $y = ?([1-9]) ]]; then
 								e #can't be zero and none of the options that require commands besides apt-get install, if this condition is true, run apt-get install
 							elif [ $y = "back" ]; then
 								clear
